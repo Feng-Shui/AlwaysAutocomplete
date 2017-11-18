@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Always Autocomplete",
+  "description": "Stop websotes turning off autocomplete. Super simple, runs on all sites, no settings.",
+  "version": "1.0.0",
+  "author": "Chris Cook",
+  "homepage_url": "https://github.com/Feng-Shui/AlwaysAutocomplete",
+  "icons": {
+    "16":  "icon16.png",
+    "48":  "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
